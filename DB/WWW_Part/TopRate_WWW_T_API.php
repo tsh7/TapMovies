@@ -13,6 +13,7 @@
 
 	$channel->queue_declare('WWW_T_API', false, false, false, false);//open channel. Start of listening
 
+
 	$msg = new AMQPMessage($data, array('delivery_mode' => 2));//convert json data to rabbitMQ message
 	$channel->basic_publish($msg, '', 'WWW_T_API');//send message to API
 	$channel->close();
