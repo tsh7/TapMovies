@@ -5,6 +5,10 @@
 
 
 ### CHANGE LOG ###
-  * [11/07/2017] v0.2
-	- Implemented a simple function for search with RabbitMQ setup
-  
+## [0.2.0] - 2017-11-07
+#### Added
+- Implemented a simple function for search with RabbitMQ setup
+
+## [0.1.0]
+#### Added
+- Front End website template connected with web server
