@@ -1,0 +1,18 @@
+<?php
+    $r_data = json_encode($R_Data);
+
+    require_once __DIR__ . '/vendor/autoload.php';
+    use PhpAmqpLib\Connection\AMQPStreamConnection;
+    use PhpAmqpLib\Message\AMQPMessage;
+
+    $connection = new AMQPStreamConnection('10.0.2.4', 5672, 'admin', 'guest');
+    $channel = $connection->channel();
+
+    $channel->queue_declare('DB_T_WWW', false, false, false, false);
+
+    $msg = new AMQPMessage($r_data, array('delivery_mode' => 2));
+    $channel->basic_publish($msg, '', 'DB_T_WWW');
+    $channel->close();
+    $connection->close();
+print_r($R_Data);
+?>
