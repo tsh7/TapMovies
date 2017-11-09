@@ -19,5 +19,6 @@ Add
     DB Server files are uploaded into 3 part DB, API, WWW
     - DB: Login and Registeration is working fine
     - API: Search and Toprate is working fine
-    - WWW: hard coded files to send variables such as login, registration, search movie, and toprate. All working fine.
+    - WWW: hard coded files to send variables such as login, registration, search movie, and toprate. 
+    - All working fine.
     
