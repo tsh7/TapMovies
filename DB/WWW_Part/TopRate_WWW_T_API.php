@@ -18,5 +18,5 @@
 	$channel->basic_publish($msg, '', 'WWW_T_API');//send message to API
 	$channel->close();
 	$connection->close();
-	include 'API_T_WWW.php'; //After sending request for TopRate, webserver needs to receive the result. API_T_WWW.php is receving part of webserver from API
+	include 'Webserver_API_T_WWW.php'; //After sending request for TopRate, webserver needs to receive the result. API_T_WWW.php is receving part of webserver from API
 ?>
