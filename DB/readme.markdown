@@ -1,5 +1,17 @@
 TapMovies DB Server
 
+@date 11/10/2017
+@version 0.3
+CHANGE LOG
+[0.3] - 2017-11-10
+
+Changed
+
+    File name change in WWW_part [API_T_WWW.php -> Webserver_API_T_WWW.php | DB_T_WWW.php -> Webserver_DB_T_WWW.php]
+    Reason: Same file names in DB and WWW, API and WWW
+    Goal: Team members can test in one virtual machine because they have all different file names
+
+
 @date 11/09/2017
 @version 0.2
 CHANGE LOG
