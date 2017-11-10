@@ -18,5 +18,5 @@
 	$channel->basic_publish($msg, '', 'WWW_T_API');//send message
 	$channel->close();
 	$connection->close();
-	include 'API_T_WWW.php';// After sending, WWW need to receive the search result. API_T_WWW.php is receving part
+	include 'Webserver_API_T_WWW.php';// After sending, WWW need to receive the search result. API_T_WWW.php is receving part
 ?>
