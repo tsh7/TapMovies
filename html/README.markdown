@@ -1,3 +1,6 @@
+# This folder has been discontinued #
+## New versions are updated from main folder ##
+11/13/2017
 ## TapMovies Web Server ##
 
 @date 11/07/2017<br/>
