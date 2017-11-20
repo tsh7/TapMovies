@@ -9,6 +9,6 @@ DB Backup LOG
 ADD
 
     DB Backup Log has been created
-    The Backup folder is located in RabbitMQ server /home/mk599/Version_Control
+    The Backup folder is located in RabbitMQ server /home/mk599/DB_Backup
     The DB backup will be performed every 01:00AM using SCP
     The backup name consistes of (Date)_mk599.sql
