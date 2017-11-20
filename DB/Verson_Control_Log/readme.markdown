@@ -5,9 +5,9 @@ TapMovies Version Control
 @version 0.1
 Centralized Version control
 [0.1] - 2017-11-19
-    Web: RabbitMQ/home/mk599/Version_Control/(date)/Web
-    API: RabbitMQ/home/mk599/Version_Control/(date)/API
-    DB:  RabbitMQ/home/mk599/Version_Control/(date)/DB
+    * Web: RabbitMQ/home/mk599/Version_Control/(date)/Web
+    * API: RabbitMQ/home/mk599/Version_Control/(date)/API
+    * DB:  RabbitMQ/home/mk599/Version_Control/(date)/DB
 
 ADD
 
