@@ -1,5 +1,21 @@
 TapMovies DB Server
 
+@date 11/29/2017
+@version 0.4
+CHANGE LOG
+[0.4] - 2017-29-10
+
+Changed
+
+    DB_Backup completed
+    Production backup completed
+    Development backup completed
+    QA backup completed
+    Webserver config update
+Add
+
+    Webserver has been developped
+
 @date 11/10/2017
 @version 0.3
 CHANGE LOG
