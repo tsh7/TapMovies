@@ -4,11 +4,17 @@ TapMovies Version Control
 @version 0.2
 Centralized Version control
 [0.2] - 2017-11-29
-    * Web: RabbitMQ/home/mk599/Backup/Config_Backup/DB/Production/11292017_DB_Config.tar
-    * API: RabbitMQ/home/mk599/Backup/Config_Backup/API/Production/11292017_API_Config.tar
-    * DB:  RabbitMQ/home/mk599/Backup/Config_Backup/Web/Production/11292017_Web_Config.tar
+    * Web: RabbitMQ/home/mk599/Backup/Config_Backup/DB/Production
+    * API: RabbitMQ/home/mk599/Backup/Config_Backup/API/Production
+    * DB:  RabbitMQ/home/mk599/Backup/Config_Backup/Web/Production
  
-
+    Date: 11/29/2017
+    * Webserver
+        - RabbitMQ/home/mk599/Backup/Config_Backup/Web/Production/11292017_Web_Config
+    * APIserver
+        - RabbitMQ/home/mk599/Backup/Config_Backup/API/Production/11292017_API_Config
+    * DBserver
+        - RabbitMQ/home/mk599/Backup/Config_Backup/DB/Production/11292017_DB_Config.tar
 
 @date 11/19/2017
 @version 0.1
