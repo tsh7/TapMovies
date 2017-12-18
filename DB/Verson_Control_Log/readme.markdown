@@ -1,6 +1,19 @@
 TapMovies Version Control
 
 @date 11/29/2017
+@version 0.3
+Centralized Version control
+[0.3] - 11/29/2017
+    * Web: RabbitMQ/home/mk599/Backup/Config_Backup/DB/Production
+    * API: RabbitMQ/home/mk599/Backup/Config_Backup/API/Production
+    * DB:  RabbitMQ/home/mk599/Backup/Config_Backup/Web/Production
+ 
+    Date: 11/29/2017
+    Bashscript to perform version control has been created in Home/user/Bashscript
+
+
+
+@date 11/29/2017
 @version 0.2
 Centralized Version control
 [0.2] - 2017-11-29
