@@ -7,7 +7,7 @@ Centralized Version control
     * Web: RabbitMQ/home/mk599/Backup/Config_Backup/DB/Production
     * API: RabbitMQ/home/mk599/Backup/Config_Backup/API/Production
     * DB:  RabbitMQ/home/mk599/Backup/Config_Backup/Web/Production
- 
+ADD 
     Date: 11/29/2017
     Bashscript to perform version control has been created in Home/user/Bashscript
 
@@ -20,7 +20,8 @@ Centralized Version control
     * Web: RabbitMQ/home/mk599/Backup/Config_Backup/DB/Production
     * API: RabbitMQ/home/mk599/Backup/Config_Backup/API/Production
     * DB:  RabbitMQ/home/mk599/Backup/Config_Backup/Web/Production
- 
+
+CHANGE
     Date: 11/29/2017
     * Webserver
         - RabbitMQ/home/mk599/Backup/Config_Backup/Web/Production/11292017_Web_Config
