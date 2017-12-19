@@ -1,5 +1,15 @@
 TapMovies DB Server
 
+
+@date 12/19/2017
+@version 0.5
+CHANGE LOG
+[0.5] - 12/19/2017
+
+ADD
+
+    Add Trello Json export
+
 @date 11/29/2017
 @version 0.4
 CHANGE LOG
