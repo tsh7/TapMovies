@@ -6,7 +6,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPConnection;
 
 //Change IP address and rabbitMQ access account info
-$connection = new AMQPConnection('10.0.2.15', 5672, 'admin', 'admin'); 
+$connection = new AMQPConnection('192.168.1.101', 5672, 'admin', 'guest'); 
 $channel = $connection->channel();
 
 //declare queue name WWW <- API
