@@ -1,4 +1,4 @@
-t<?php
+<?php
 //Webserver sends to API (search)
   
   //movie name
