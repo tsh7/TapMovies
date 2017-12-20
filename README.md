@@ -1,5 +1,11 @@
 # TapMovies - Movie Database #
 
+trello.json = JSON for trello
+htmlnew.tar.gz = web html files
+apache2.tar.gz = web apache2 files
+vcDev.tar.gz = server version control files
+DB.tar.gz = Database files
+
 ## Web Server ChangeLog ##
 
 @date 12/19/2017
