@@ -28,21 +28,22 @@
     $Function = $data["Function"];
     
     switch ($Function){
-    //if Function value is "Search_movie", do Search.php
-	
+   
+  //if Function value is "Search_movie" then it will open Search.php	
   case "Search_movie":
 		include 'Search.php';
 		break;
 	
-  //if Function value is "TopRate", do TopRate.php
+  //if Function value is "TopRate" then it will open TopRate.php
   case "TopRate":
 		include 'TopRate.php';
 		break;
 	
-  //if Function value is "RecentMovie", do RecentMovie.php
+  //if Function value is "RecentMovie" then it will open RecentMovie.php 
   case "RecentMovie":
 		include 'RecentMovie.php';
-		break;
+  		break;
+  // if Function value is "Search_id" then it will open Search_id.php 
   case "Search_id":
 		include 'Search_id.php';
 		break;	
