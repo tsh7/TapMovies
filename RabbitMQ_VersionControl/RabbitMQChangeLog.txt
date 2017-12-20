@@ -1,0 +1,103 @@
+4 November, 2017
+
+Installed RabbitMQ server and set up erlang
+
+Created an Admin Account:
+
+User:      admin
+Password:  guest
+
+	-created a virtual host by the name of IT490
+		*gave virtual host permissions to admin
+	-added 4 queues:
+		*API_T_WWW for API connection to Webserver
+		*DB_T_WWW for Database to Webserver
+		*WWW_T_API for Webserver to API
+		*WWW_T_DB for Webserver to Database
+
+
+14 November, 2017
+
+Connected all 3 servers to RabbitMQ via Router
+	-Changed Physical IP to 192.168.1.201, Netmask 255.255.255.0, Gateway: 192.168.1.1, DNS to 8.8.8.8
+	-Changed RabbitMQ VM IP to 192.168.1.101, Netmask 24, Gateway:  192.168.1.1, DNS to 8.8.8.8
+	-Can ping Webserver, Gateway, and API
+
+
+19 November, 2017
+
+Installed openssh-server
+Installed openssh-client
+Created a directory to hold ChangeLogs within the IT490 directory
+Created a directory to hold VersionControl within the IT490 directory
+
+
+28 November, 2017
+
+Created an scptest.txt file
+Created a keygen for my hostname and IP
+	-was able to send a file through scp to another machine
+	-that machine was able to send a file back
+	-tested scp file transfer with Web Server and API Server
+		*both successful
+
+
+29 November, 2017
+
+Created a bash script that sent a test text to other machines on the network
+Created 3 Version Control directories for the other servers to send their logs to
+	-APIVersion directory
+	-WebServer directory
+	-Database directory
+Created 3 Change Log directories for the other servers to send their logs to
+	-APIChangeLog
+	-WebserverChangeLog
+	-DatabaseChangeLog
+
+
+5 December, 2017
+
+Created a bash script that sends updated versions out to the live servers
+
+	-WebServer will send their updated versions to the WebServerVersion folder in the VersionControl folder
+	-APIVersion sends theirs to the APIVersion directory
+	-Database sends theirs to the DatabaseVersion directory
+
+	-SCPMultiTransferTest.sh asks for 3 arguments:
+		*$1 refers to the name of the WebServer Version
+		*$2 refers to the name of the APIServer Version
+		*$3 refers to the name of the Database Version
+		*if no arguments are entered, returns an error message
+
+	-All change logs sent in from the other servers will be stored in their respective folders in the /IT490/ChangeLogs
+
+
+11 December, 2017
+
+Created 6 new PHP scripts:
+	- VerTWeb.php - sends message and runs toWebLive.sh
+	- VerTWebTest.php - sends message and runs toWebTest.sh
+	- VerTAPI.php - sends message and runs toAPILive.sh
+	- VerTAPItest.php - sends message and runs toAPITest.sh
+	- VerTDB.php - sends message and runs toDBLive.sh
+	- VerTDBtest.php - sends message and runs toDBTest.sh
+
+Added 6 new bash scripts that split the bulk workload of the SCPTransfer.sh script
+	- toAPILive.sh - pushes the new API version to the Live API server
+	- toAPITest.sh - pushes the new API version to the Test API server
+	- toWebLive.sh - pushes the new Web version to the Live Web server
+	- toWebTest.sh - pushes the new Web version to the Test Web server
+	- toDBLive.sh - pushes the new database version to the Live Database server
+	- toDBTest.sh - pushes the new database version to the Test Database server
+
+
+19 December, 2017
+	
+Added new PHP scripts that utilizes the above scripts to automatically send and install the latest versions onto the Test or Live servers.
+	- automatedReceive opens a channel and waits for an input from either the dev or the QA servers
+	- upon receiving a message and a version from either server source, this script will read the function and determine the destination
+	- it then runs one of the scripts mentioned above
+	- this should also allow the system to process multiple messages and send all the proper versions to the proper places
+	
+
+Also deleted all the preset queues so that duplicate queue instances won't happen and will not interfere with the application's goals
