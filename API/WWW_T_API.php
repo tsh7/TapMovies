@@ -43,10 +43,12 @@
   case "RecentMovie":
 		include 'RecentMovie.php';
 		break;
-	
-  //if data received from Webserver is something wrong, display error message
+  case "Search_id":
+		include 'Search_id.php';
+		break;	
+  //if data received from WWW has some problem then it will display error message
   default:
-		echo "Key or value is something wrong";
+		echo "Please try again";
     }
     };
     $channel->basic_consume('WWW_T_API', '', false, true, false, false, $callback);
