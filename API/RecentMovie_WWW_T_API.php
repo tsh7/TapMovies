@@ -13,7 +13,7 @@
 	use PhpAmqpLib\Message\AMQPMessage;
   
   //change ip and rabbitMQ account
-	$connection = new AMQPConnection('10.0.2.15', 5672, 'admin', 'admin');
+	$connection = new AMQPConnection('192.168.1.101', 5672, 'admin', 'guest');
   
   //create channel
 	$channel = $connection->channel();
@@ -29,7 +29,7 @@
 	$channel->close();
 	$connection->close();
   
-  //After sending request for RecentMovie, webserver needs to receive the result. API_T_WWW.php is receving part of webserver from API
+  //including webserver version of receiving result. 
 	include 'Webserver_API_T_WWW.php';
 ?>
 
