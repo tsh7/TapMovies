@@ -1,4 +1,4 @@
-<?php
+t<?php
 //Webserver sends to API (search)
   
   //movie name
@@ -16,7 +16,7 @@
 	use PhpAmqpLib\Message\AMQPMessage;
   
   //change ip and RabbitMQ account info if needed
-	$connection = new AMQPConnection('10.0.2.15', 5672, 'admin', 'admin');
+	$connection = new AMQPConnection('192.168.1.101', 5672, 'admin', 'guest');
   
   //create channel
 	$channel = $connection->channel();
@@ -32,7 +32,7 @@
 	$channel->close();
 	$connection->close();
   
-  // After sending, WWW need to receive the search result. API_T_WWW.php is receving part
+  // Including sending file about result to WWW. 
 	include 'Webserver_API_T_WWW.php';
   
   ?>
