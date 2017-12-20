@@ -10,7 +10,7 @@
     use PhpAmqpLib\Message\AMQPMessage;
     
     //change ip and rabbitMQ account info if needed
-    $connection = new AMQPStreamConnection('10.0.2.15', 5672, 'admin', 'admin');
+    $connection = new AMQPStreamConnection('192.168.1.101', 5672, 'admin', 'guest');
     
     //create channel
     $channel = $connection->channel();
