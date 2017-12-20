@@ -2,7 +2,23 @@
 
 TapMovies API Server
 
-@date 12/6/2017 @version 1.2 - 12/6/2017 CHANGE LOG
+@date 12/20/2017 @version 1.2 - 12/20/2017 CHANGE LOG
+
+[1.5] - 12/20/2017 Added 
+
+Added all files to Github and editted code and changed IPs to make it work. 
+Created documentation for all the Api documents. 
+Tested automated sending and receiving scp between users. 
+
+[1.4] - 12/19/2017 Added 
+
+Automated bash script to scp files automatically. 
+Research on Rate by friend and me file. 
+
+[1.3] - 12/18/2017 
+
+Researched Social Feeds and giant Social Feeds. 
+Trello posting all the cards and editting. 
 
 [1.2] - 12/5/2017 Added 
 
