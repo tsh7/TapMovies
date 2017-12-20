@@ -34,6 +34,6 @@
 	$channel->close();
 	$connection->close();
 
-// Sending result to WWW. 
+// Including WWW receiving file to receive result. 
 	include 'Webserver_API_T_WWW.php';
 ?>
