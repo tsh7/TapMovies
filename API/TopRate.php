@@ -2,7 +2,7 @@
 //Api request to tmdb request for top rate movies 
 
 //address of toprate in TMDB
-$url = 'https://api.themoviedb.org/3/discover/movie?api_key=4d9ca8e7d8e3381c21ffeb6f1306ee32&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1';
+$url = 'https://api.themoviedb.org/3/discover/movie?api_key=ec36674eb700de4ef91cc91d0fd2c966&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1';
 
 //store the result to $json_data.
 $json_data = file_get_contents($url);
