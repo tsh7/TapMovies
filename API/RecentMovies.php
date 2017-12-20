@@ -1,6 +1,6 @@
 <?php
 // RecentMovie process will run when the WWW request for it to access data then send it back to WWW.   
-// RecentMovie address in TMDB 
+// RecentMovie api link in TMDB 
 $url = 'https://api.themoviedb.org/3/movie/latest?api_key=ec36674eb700de4ef91cc91d0fd2c966&language=en-US';
 // stores the json data result
 $json_data = file_get_contents($url);
