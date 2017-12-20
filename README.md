@@ -2,10 +2,58 @@
 
 ## Web Server ChangeLog ##
 
-@date 11/12/2017<br/>
-@version 0.3<br/>
+@date 12/19/2017
+@version 1.1
 
 ### CHANGE LOG ###
+## [1.1] - 2017-12-19
+#### Added
+- watched and to be watched button in movie detail page if user logged in (LI)
+#### Changed
+- Changed email to username for registration, login, session, profile, etc
+- Keep email as user information
+- Changed alert for bad registration/login to JavaScript from PHP
+#### Removed
+- Phone in the registration is removed along with codes related to it
+
+## [1.0] - 2017-12-18
+#### Added
+- Movie detail page now also shows movie ID
+#### Changed
+- Fixed some issues relating to login php pages after user logged in (bad redirect)
+- API receivers now also retrieve movie id
+
+## [0.9] - 2017-12-12
+#### Added
+- Login php pages after user logged in
+
+## [0.8] - 2017-12-5
+#### Added
+- SCP configured for version control and centralized logging
+- Movie detail page shows the title of the movie
+
+## [0.7] - 2017-11-27
+#### Changed
+- Top Rated movie page now shows title, vote count and rating.
+
+## [0.6] - 2017-11-27
+#### Added
+- Top Rated movie page works
+
+## [0.5] - 2017-11-20
+#### Added
+- Snapshots and 2 VM clones created for create, install, and rollback implementation
+
+## [0.4] - 2017-11-15
+#### Added
+- PHP codes after user logged in (session), duplicate web pages but with session data
+- Log out php codes
+#### Changed
+- now RabbitMQinfo.php file store all variables needed for RabbitMQ (ip, port, user, password)
+- change all files that related to RabbitMQ variables to include 'RabbitMQinfo.php'
+#### Removed
+- Removed unnecessary files
+
 ## [0.3] - 2017-11-12
 #### Added
 - Search Result page with movie title and image
